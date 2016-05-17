@@ -1,5 +1,6 @@
 package com.mb.golfetto.moveon;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,28 +22,32 @@ public class EscolhaActivity extends AppCompatActivity {
         txtAumentarForca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EscolhaActivity.this, "Em breve",Toast.LENGTH_SHORT).show();
+                Intent intentVaiParaDash = new Intent(EscolhaActivity.this,DashActivity.class);
+                startActivity(intentVaiParaDash);
             }
         });
 
         txtDefinirCorpo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EscolhaActivity.this, "Em breve",Toast.LENGTH_SHORT).show();
+                Intent intentVaiParaDash = new Intent(EscolhaActivity.this,DashActivity.class);
+                startActivity(intentVaiParaDash);
             }
         });
 
         txtPerderPeso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EscolhaActivity.this, "Em breve",Toast.LENGTH_SHORT).show();
+                Intent intentVaiParaDash = new Intent(EscolhaActivity.this,DashActivity.class);
+                startActivity(intentVaiParaDash);
             }
         });
 
         txtGanharMassa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EscolhaActivity.this, "Em breve",Toast.LENGTH_SHORT).show();
+                Intent intentVaiParaDash = new Intent(EscolhaActivity.this,DashActivity.class);
+                startActivity(intentVaiParaDash);
             }
         });
     }

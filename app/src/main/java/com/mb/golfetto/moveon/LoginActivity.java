@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -16,6 +17,19 @@ public class LoginActivity extends AppCompatActivity {
 
         Button btnCad = (Button) findViewById(R.id.btnCriarConta);
         Button btnFace = (Button) findViewById(R.id.btnFacebook);
+        Button btnLogin = (Button) findViewById(R.id.btnLogin);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    Intent intentFace = new Intent(LoginActivity.this, DashActivity.class);
+                    startActivity(intentFace);
+                } catch (Exception ex){
+                    Toast.makeText(LoginActivity.this,ex.getMessage().toString(),Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         btnCad.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,8 +42,13 @@ public class LoginActivity extends AppCompatActivity {
         btnFace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentFace = new Intent(LoginActivity.this, DashActivity.class);
-                startActivity(intentFace);
+                try{
+                    Intent intentFace = new Intent(LoginActivity.this, DashActivity.class);
+                    startActivity(intentFace);
+                } catch (Exception ex){
+                    Toast.makeText(LoginActivity.this,ex.getMessage().toString(),Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
