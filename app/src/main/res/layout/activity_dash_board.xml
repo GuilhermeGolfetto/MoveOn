@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textSize="31dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="#107B6A"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/iniciar_exercicios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/iniciar_exercicio"
+            android:text="Iniciar Exercício"
+            android:textColor="#107B6A"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/lista_exercicios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iniciar_exercicios"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/lista_exercicios"
+            android:text="Lista de exercícios"
+            android:textColor="#107B6A"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lista_exercicios"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/perfil"
+            android:text="Perfil"
+            android:textColor="#107B6A"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/estatisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/perfil"
+            android:layout_alignRight="@id/iniciar_exercicios"
+            android:clickable="true"
+            android:drawableTop="@drawable/estatisticas"
+            android:text="Estatisticas"
+            android:textColor="#107B6A"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+</LinearLayout>
